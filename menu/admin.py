@@ -3,9 +3,9 @@ from .models import Category, MenuItem
 from ordered_model.admin import OrderedModelAdmin
 
 # Register your models here.
-class MenuItemAdmin(admin.ModelAdmin):
+class MenuItemAdmin(OrderedModelAdmin):
     # ...
-    list_display = ('title', 'description', 'price', 'active')
+    list_display = ('title', 'description', 'price', 'active', 'move_up_down_links')
 
 class CategoryAdmin(OrderedModelAdmin):
     # ...

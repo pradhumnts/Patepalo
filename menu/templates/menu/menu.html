@@ -39,7 +39,7 @@
                             <p>{{item.description}}</p>
                         </div>
                         <div class="item-price">
-                            <p>{{item.price}}</p>
+                            <p id="price">{{item.price}}</p>
                         </div>
                         <hr class="hr-theme">
                     </div>
@@ -78,10 +78,21 @@
   
   </div>
     <script>
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+
+        let getPrice = document.querySelectorAll("#price")
+
+        getPrice.forEach(price => {
+            price.innerHTML = numberWithCommas(price.innerHTML)
+        });
+   
+
         let checkItems = document.querySelectorAll(".restaurant-menu")
         
         checkItems.forEach(function(item){
-            console.log()
             if(item.innerHTML.length < 100 ){
                 item.innerHTML = "Hello"
                 console.log(item.innerHTML)
