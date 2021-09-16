@@ -126,7 +126,7 @@
         }
         var menu = ['{% for item in category %}{{item.category}}','{% endfor %}']
         var mySwiper = new Swiper('.swiper-container', {
-          
+            simulateTouch:false,
             pagination: {
                 speed:300,
                 allowTouchMove: true,
