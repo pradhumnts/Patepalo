@@ -105,6 +105,7 @@ color:var(--text-color);
 opacity: 1;
 background: var(--primary-color);
 border-bottom:var(--primary-color) solid 3px;
+pointer-events: none
 }
 .swiper-pagination-bullet-active {
 color:var(--text-color);
