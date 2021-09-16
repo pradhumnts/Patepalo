@@ -80,7 +80,6 @@ header {
   -ms-flex-pack: center;
 }
 .swiper-pagination {
-  top: 0;
   position: relative !important;
   background-color: #f4c198;
   display: inline-flex;
