@@ -22,10 +22,15 @@
         </div>
     </header>
     <!-- Slider main container -->
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination scroll-touch"></div>
     <div class="swiper-container">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
 
+        
+        <div class="swiper-wrapper">
+     
             {% for category in category %}
             <div class="swiper-slide">
                 <div class="restaurant-menu">
@@ -48,12 +53,9 @@
                 {% endfor %}
             </div>
             </div>
-          
+            
             {% endfor %}
         </div>
-        
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
     </div>
 
     <div class="footer">
