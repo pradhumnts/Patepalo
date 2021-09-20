@@ -35,9 +35,9 @@ header {
 .restaurant-menu {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  padding: 0px 80px;
   align-items: flex-start;
+  margin-top:20px;
+  padding: 0px 140px;
 }
 @media only screen and (max-width: 768px) {
   .restaurant-menu {
@@ -67,6 +67,8 @@ header {
 }
 
 .swiper-slide {
+  max-height: 100vh;
+  overflow: scroll;
   text-align: left;
   font-size: 16px;
   width: 100% !important;
@@ -223,7 +225,7 @@ header {
   height: 100vh;
   background: black;
   color: white;
-  font-size: 5rem;
+  font-size: 3rem;
   flex-direction: column;
 }
 .button {
